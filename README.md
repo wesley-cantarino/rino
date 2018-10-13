@@ -2,7 +2,7 @@
 
 O objetivo é ter uma plataforma onde seja possível visualizar as leituras dos sensores, os valores das variáveis e inclusive poder interferir e controlar as ações do robô.  Tudo isto seria usando a parte wifi do esp.
 
-Durante a primeira semana procurei saber como gravar arquivos na memória flash do ESP tanto o 32 quanto o 8266 (2 excelentes artigos são este e este) mas em virtude do grau de complexidade e tendo em vista que não teria tempo para terminar, resolvi idealizar como poderia ser a parte de representação gráfica do robô. Primeiramente usando Processing mas futuramente mudar para javaScrip e assim poder rodar em um navegador.
+Durante a primeira semana procurei saber como gravar arquivos na memória flash do ESP tanto o 32 quanto o 8266 (2 excelentes artigos são este e este) mas em virtude do grau de complexidade e tendo em vista que não teria tempo para terminar, resolvi idealizar como poderia ser a parte de representação gráfica (da visão) do robô. Primeiramente usando Processing mas futuramente mudar para javaScrip e assim poder rodar em um navegador.
 
 Tendo isso em mente, peguei 1 esp8266 (nodeMCU), 1 giroscópio (GY-521 MPU6050) e 1 Sharp 20-150 cm (GP2Y0A02YK0F) e montei da seguinte forma:
 
