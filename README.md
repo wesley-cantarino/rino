@@ -5,9 +5,17 @@ O objetivo é ter uma plataforma onde seja possível visualizar as leituras dos 
 Durante a primeira semana procurei saber como gravar arquivos na memória flash do ESP tanto o 32 quanto o 8266 (2 excelentes artigos são este e este) mas em virtude do grau de complexidade e tendo em vista que não teria tempo para terminar, resolvi idealizar como poderia ser a parte de representação gráfica do robô. Primeiramente usando Processing mas futuramente mudar para javaScrip e assim poder rodar em um navegador.
 
 Tendo isso em mente, peguei 1 esp8266 (nodeMCU), 1 giroscópio (GY-521 MPU6050) e 1 Sharp 20-150 cm (GP2Y0A02YK0F) e montei da seguinte forma:
+
+
+[link para video](https://www.youtube.com/watch?v=HjF-_QqihHc)
+
+![](https://github.com/wesley-cantarino/rino/blob/master/IMG/pronto.jpeg)
+
 ![](https://github.com/wesley-cantarino/rino/blob/master/IMG/foto_do_video.png)
 
+
 ![](https://github.com/wesley-cantarino/rino/blob/master/IMG/montagem_IMG.png)
+
 
 ![](https://github.com/wesley-cantarino/rino/blob/master/IMG/proces.png)
 
@@ -45,6 +53,9 @@ Então o código ficou da [seguinte forma.](https://github.com/wesley-cantarino/
 
 # 4ºpasso
 A parte rosada/vermelho claro é a abertura do sensor sharp esse paralelepípedo seria a estrutura onde o sensor está apoiado (neste caso o robô). 
+
 É possível mudar a visão o observador a visão o observador mexendo mouse. O desenho se inclina de acordo com a leitura do giroscópio e o arco aumenta ou diminui de acordo com a distância medida.
 [Código usado no processing](https://github.com/wesley-cantarino/rino/blob/master/sketch_3D_visor/processing_3D_visor/processing_3D_visor.pde)
+
+
 
