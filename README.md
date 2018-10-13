@@ -54,8 +54,10 @@ Então o código ficou da [seguinte forma.](https://github.com/wesley-cantarino/
 # 4ºpasso
 A parte rosada/vermelho claro é a abertura do sensor sharp esse paralelepípedo seria a estrutura onde o sensor está apoiado (neste caso o robô). 
 
-É possível mudar a visão o observador a visão o observador mexendo mouse. O desenho se inclina de acordo com a leitura do giroscópio e o arco aumenta ou diminui de acordo com a distância medida.
+É possível mudar a visão do observador mexendo mouse. O desenho se inclina de acordo com a leitura do giroscópio e o arco aumenta ou diminui de acordo com a distância medida.
 [Código usado no processing](https://github.com/wesley-cantarino/rino/blob/master/sketch_3D_visor/processing_3D_visor/processing_3D_visor.pde)
+
+Da mesmoa forma que foi feito para 1 sensor. É fácil aumentar para 2 ou mais sensores ou então imprimir na tela em qual if o código entrou.
 
 
 
