@@ -59,5 +59,7 @@ A parte rosada/vermelho claro é a abertura do sensor sharp esse paralelepípedo
 
 Da mesmoa forma que foi feito para 1 sensor. É fácil aumentar para 2 ou mais sensores ou então imprimir na tela em qual if o código entrou.
 
+O processing permite exportar o código como sendo um arquivo executável.
+
 
 
