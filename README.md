@@ -41,7 +41,7 @@ No código tempos DIST = 60.7 * pow(X, -1.12). Onde X e dado por ((valor de leit
 
 [No código](https://github.com/wesley-cantarino/rino/blob/master/code_reference/sketch_sharp/sketch_sharp.ino)
 
-```arduino
+```c
 #include "Arduino.h"
 
 const int sharp = A0;
@@ -73,7 +73,7 @@ O giroscópio segue o protocolo i2c e é bem chatinho de se fazer as leituras. U
 
 Tendo como [resultado este código.](https://github.com/wesley-cantarino/rino/blob/master/code_reference/sketch_gyroscope/sketch_gyroscope.ino) 
 
-```arduino
+```c
 #include "Arduino.h"
 #include "Wire.h" // This library allows you to communicate with I2C devices.
 const int MPU_ADDR = 0x69; // I2C address of the MPU-6050. If AD0 pin is set to HIGH, the I2C address will be 0x69.
@@ -121,7 +121,7 @@ void loop() {
 Agora já estamos na parte final da programação do ESP. Juntei código de leituras que foi construído nos passos anteriores e imprimir eles usando serial.print. Agora, a grande estratégia é como organizar esses dados para depois quando for fazer a leitura, eles já estiverem organizados. Minha organização é imprimir tipo (um número inteiro) mais “,” então o valor que é o dado e “;” para informar que acabou.  
 Então o código ficou da [seguinte forma.](https://github.com/wesley-cantarino/rino/blob/master/sketch_3D_visor/esp8266_3D_visor/esp8266_3D_visor.ino)
 
-```arduino
+```c
 #include "Arduino.h"
 
 const int sharp = A0;
