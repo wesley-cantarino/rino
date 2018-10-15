@@ -23,7 +23,7 @@ OBS: o nível lógico do ESP é 3.3V. o giroscópio trabalha com 3.3V mas já o 
 
 Agora, podemos separa em 4 passos. 1º entender como funciona Sharp, 2º entender como funciona o giroscópio, 3º escrever código do ESP e 4º escrever código do Processing.
 
-# 1º passo. 
+# 1º passo: Leitura do sensor sharp
 Olhando o [datasheet do sharp](https://www.sparkfun.com/datasheets/Sensors/Infrared/gp2y0a02yk_e.pdf) vemos que tem uma saída não linear que e dado pela forma y = a * x^b. felizmente minha calculadora e consegue calcular o valor de a e de b. ![](https://github.com/wesley-cantarino/rino/blob/master/IMG/saida.jpg)
 
 Escolhendo os valores de tensão como sendo meu x e y minha distância. E usando 
@@ -66,7 +66,7 @@ void loop (){
 }
 ```
 
-# 2º passo.
+# 2º passo: Como funciona o giroscópio
 O giroscópio segue o protocolo i2c e é bem chatinho de se fazer as leituras. Usei esses 2 sites como referência.<br>
 [Este como principal.](https://www.instructables.com/id/MPU6050-Arduino-6-Axis-Accelerometer-Gyro-GY-521-B/) <br>
 [Já este como auxiliar](https://www.instructables.com/id/MPU6050-Arduino-6-Axis-Accelerometer-Gyro-GY-521-B/)
@@ -117,7 +117,7 @@ void loop() {
 }
 ```
 
-# 3º passo
+# 3º passo: Juntando passo 1 e 2
 Agora já estamos na parte final da programação do ESP. Juntei código de leituras que foi construído nos passos anteriores e imprimir eles usando serial.print. Agora, a grande estratégia é como organizar esses dados para depois quando for fazer a leitura, eles já estiverem organizados. Minha organização é imprimir tipo (um número inteiro) mais “,” então o valor que é o dado e “;” para informar que acabou.  
 Então o código ficou da [seguinte forma.](https://github.com/wesley-cantarino/rino/blob/master/sketch_3D_visor/esp8266_3D_visor/esp8266_3D_visor.ino)
 
@@ -207,7 +207,7 @@ void calc_gyro (){
 }
 ```
 
-# 4ºpasso
+# 4ºpasso: Processing
 A parte rosada/vermelho claro é a abertura do sensor sharp esse paralelepípedo seria a estrutura onde o sensor está apoiado (neste caso o robô). 
 
 Da mesmoa forma que foi feito para 1 sensor. É fácil aumentar para 2 ou mais sensores ou então imprimir na tela em qual if o código entrou.
